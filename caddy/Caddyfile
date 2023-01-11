@@ -1,0 +1,8 @@
+{
+    debug
+}
+
+localhost:443 {
+    tls /test/certs/cc.cert /test/certs/cc.key
+    reverse_proxy srv:12321
+}
